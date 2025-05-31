@@ -1,37 +1,44 @@
 /* Общие стили */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f4f4f4;
+  background-color: #fafafa;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
   padding: 10px;
+  color: #333;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
 }
 
 /* Навигация */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 
 nav .logo h1 {
   margin: 0;
+  font-size: 2rem;
 }
 
 nav .nav-links {
@@ -44,66 +51,78 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-  color: #fff;
+  color: white;
   font-size: 16px;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 nav .nav-links a:hover {
-  color: #ff9900;
+  color: #ff6347;
 }
 
 /* Главный баннер */
 .hero {
-  background: url('hero-image.jpg') no-repeat center center;
-  background-size: cover;
+  background-color: #007bff;
+  color: white;
   text-align: center;
   padding: 100px 20px;
-  color: #fff;
 }
 
 .hero h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 3rem;
 }
 
 .hero form {
   display: inline-flex;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .hero input {
-  padding: 10px;
-  font-size: 16px;
+  padding: 15px;
+  font-size: 18px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
 }
 
 .hero button {
-  padding: 10px 20px;
-  background-color: #ff9900;
+  padding: 15px 30px;
+  background-color: #ff6347;
   border: none;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
 }
 
 .hero button:hover {
-  background-color: #ff6600;
+  background-color: #ff4500;
 }
 
 /* Фильтры */
 .filters {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
   margin: 20px;
+  border-radius: 8px;
 }
 
-.filters input {
+.filters h3 {
+  font-size: 1.5rem;
+}
+
+.filters input[type="range"],
+.filters input[type="number"] {
   width: 100%;
   padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 /* Результаты поиска */
 .results {
   padding: 20px;
-  background-color: #fff;
 }
 
 .results-list {
@@ -112,16 +131,27 @@ nav .nav-links a:hover {
   gap: 20px;
 }
 
-.results-list div {
-  width: 30%;
-  background-color: #f9f9f9;
-  padding: 15px;
+.result-item {
+  background-color: #ffffff;
+  padding: 20px;
   border-radius: 8px;
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result-item h4 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.result-item p {
+  font-size: 1rem;
+  color: #777;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 0;
   text-align: center;
 }
