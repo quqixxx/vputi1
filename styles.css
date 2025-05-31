@@ -1,0 +1,127 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Навигация */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo h1 {
+  margin: 0;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin: 0 15px;
+}
+
+nav .nav-links a {
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: #ff9900;
+}
+
+/* Главный баннер */
+.hero {
+  background: url('hero-image.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero form {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.hero input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #ff9900;
+  border: none;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #ff6600;
+}
+
+/* Фильтры */
+.filters {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+}
+
+.filters input {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Результаты поиска */
+.results {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.results-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.results-list div {
+  width: 30%;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

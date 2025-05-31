@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="впути — сайт для поиска и бронирования отелей, туров и билетов.">
+  <title>впути - Бронирование отелей, туров и билетов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1><a href="/">впути</a></h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Отели</a></li>
+        <li><a href="#">Туры</a></li>
+        <li><a href="#">Билеты</a></li>
+        <li><a href="#">О нас</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Главный баннер -->
+  <section class="hero">
+    <h2>Найдите идеальные отели, туры и билеты</h2>
+    <form id="searchForm">
+      <input type="text" id="destination" placeholder="Где вы хотите побывать?" />
+      <button type="submit">Поиск</button>
+    </form>
+  </section>
+
+  <!-- Фильтры для поиска -->
+  <section class="filters">
+    <h3>Фильтры</h3>
+    <label for="priceRange">Цена</label>
+    <input type="range" id="priceRange" min="0" max="1000" />
+    <label for="rating">Рейтинг</label>
+    <input type="number" id="rating" min="1" max="5" />
+  </section>
+
+  <!-- Результаты поиска -->
+  <section id="results" class="results">
+    <h3>Результаты поиска</h3>
+    <div class="results-list">
+      <!-- Результаты будут загружаться сюда через JS -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025, Все права защищены.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
